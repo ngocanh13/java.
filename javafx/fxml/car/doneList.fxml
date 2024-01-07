@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="javafx.controller.customer.DoneController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Text layoutX="348.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Done List">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="481.0" layoutY="43.0" mnemonicParsing="false" text="Search">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField layoutX="261.0" layoutY="43.0" promptText="Search">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button onAction="#goTo" layoutX="579.0" layoutY="43.0" mnemonicParsing="false" text="+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TableView layoutY="93.0" prefHeight="519.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn prefWidth="46.0" text="ID" />
+                        <TableColumn prefWidth="159.0" text="Full Name " />
+                        <TableColumn prefWidth="98.0" text="DOB" />
+                        <TableColumn prefWidth="142.0" text="Address" />
+                        <TableColumn minWidth="0.0" prefWidth="112.0" text="Car" />
+                        <TableColumn prefWidth="128.0" text="Days" />
+                        <TableColumn prefWidth="114.0" text="Note" />
+                     </columns>
+                  </TableView>
+                  <Hyperlink onAction="#back" layoutX="20.0" layoutY="16.0" text="&lt;&lt;Back" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

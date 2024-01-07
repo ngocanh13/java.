@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="javafx.controller.customer.EditController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Text layoutX="346.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Car">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="254.0" layoutY="37.0" prefHeight="31.0" prefWidth="231.0" promptText="Search" />
+                  <Button layoutX="481.0" layoutY="37.0" mnemonicParsing="false" text="Search" />
+                  <Hyperlink onAction="#back" layoutX="14.0" layoutY="14.0" text="&lt;&lt;Back" />
+                  <ListView layoutX="28.0" layoutY="84.0" prefHeight="289.0" prefWidth="407.0" />
+                  <Label layoutX="472.0" layoutY="84.0" text="Car 1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button onAction="#submit" layoutX="368.0" layoutY="507.0" mnemonicParsing="false" text="Submit" />
+                  <TextField  layoutX="472.0" layoutY="168.0" promptText="Name Car" />
+                  <TextArea layoutX="472.0" layoutY="316.0" prefHeight="117.0" prefWidth="215.0" promptText="Position" />
+
+                  <MenuButton layoutX="472.0" layoutY="122.0" mnemonicParsing="false" text="Status" textAlignment="CENTER">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Available" />
+                        <MenuItem mnemonicParsing="false" text="Invaild" />
+                     </items>
+                  </MenuButton>
+                  <TextField  layoutX="472.0" layoutY="213.0" promptText="Seats" />
+                  <TextField layoutX="472.0" layoutY="448.0" promptText="Price" />
+                  <TextField layoutX="470.0" layoutY="262.0" prefHeight="31.0" prefWidth="190.0" promptText="Color" />
+
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

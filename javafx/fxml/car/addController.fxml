@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="javafx.controller.customer.CreateController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Text layoutX="320.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink onAction="#backToList" layoutX="14.0" layoutY="9.0" text="&lt;&lt;Back" />
+                  <TextField fx:id="ipFullName" layoutX="65.0" layoutY="90.0" prefHeight="31.0" prefWidth="276.0" promptText="Full Name " />
+                  <DatePicker fx:id="ipDob" layoutX="65.0" layoutY="152.0" prefHeight="31.0" prefWidth="275.0" promptText="DOB" />
+                  <TextField fx:id="ipCarName" layoutX="462.0" layoutY="90.0" prefHeight="31.0" prefWidth="255.0" promptText="Car Name" />
+                  <TextArea fx:id="ipAddress" layoutX="62.0" layoutY="212.0" prefHeight="299.0" prefWidth="281.0" promptText="Address" />
+                  <DatePicker fx:id="ipDateStart" layoutX="462.0" layoutY="152.0" prefHeight="31.0" prefWidth="257.0" promptText="Date Start" />
+                  <TextField fx:id="ipDay" layoutX="462.0" layoutY="217.0" prefHeight="31.0" prefWidth="255.0" promptText="Days" />
+                  <Button onAction="#submit"  layoutX="643.0" layoutY="518.0" mnemonicParsing="false" text="Create">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

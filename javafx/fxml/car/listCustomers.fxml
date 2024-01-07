@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="javafx.controller.customer.ListController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0"  prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane layoutY="8.0" prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Hyperlink onAction="#Back" layoutX="22.0" layoutY="14.0" text="&lt;&lt;Back" />
+                  <Text layoutX="347.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tbView" layoutY="133.0" prefHeight="462.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn fx:id="tcID" prefWidth="46.0" text="ID" />
+                        <TableColumn fx:id="tcName" prefWidth="159.0" text="Full Name " />
+                        <TableColumn fx:id="tcDOB" prefWidth="98.0" text="DOB" />
+                        <TableColumn fx:id="tcAddress" prefWidth="142.0" text="Address" />
+                        <TableColumn fx:id="tcCar" minWidth="0.0" prefWidth="112.0" text="Car" />
+                        <TableColumn fx:id="tcDateStart" prefWidth="128.0" text="Date Start" />
+                        <TableColumn fx:id="tcDays" prefWidth="114.0" text="Days" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="472.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="67.0" text="Search" />
+                  <TextField layoutX="255.0" layoutY="72.0" prefHeight="40.0" prefWidth="223.0" promptText="Search" />
+                  <Button onAction="#create" layoutX="559.0" layoutY="72.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" text="+" />
+                  <Text layoutX="303.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Haven't picked up the car yet)" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

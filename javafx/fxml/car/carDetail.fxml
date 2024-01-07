@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Text layoutX="346.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cars Detail">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="254.0" layoutY="37.0" prefHeight="31.0" prefWidth="231.0" promptText="Search" />
+                  <Button layoutX="481.0" layoutY="37.0" mnemonicParsing="false" text="Search" />
+                  <Hyperlink layoutX="14.0" layoutY="14.0" text="&lt;&lt;Back" />
+                  <ListView layoutX="28.0" layoutY="84.0" prefHeight="289.0" prefWidth="407.0" />
+                  <Label layoutX="472.0" layoutY="84.0" text="Car 1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="368.0" layoutY="507.0" mnemonicParsing="false" text="Submit" />
+                  <DatePicker layoutX="472.0" layoutY="213.0" promptText="Date Order" />
+                  <TextField layoutX="472.0" layoutY="168.0" promptText="Name Customer" />
+                  <TextArea layoutX="473.0" layoutY="300.0" prefHeight="116.0" prefWidth="215.0" promptText="Position" />
+
+                  <MenuButton layoutX="472.0" layoutY="122.0" mnemonicParsing="false" text="Status" textAlignment="CENTER">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </MenuButton>
+                  <TextField layoutX="472.0" layoutY="256.0" promptText="Seats" />
+                  <TextField layoutX="472.0" layoutY="433.0" promptText="Price" />
+
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>
